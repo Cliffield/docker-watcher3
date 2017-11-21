@@ -11,7 +11,7 @@ ENV PYTHONIOENCODING="UTF-8"
 
 # install app
 RUN \
- pip install --no-cache-dir -U babelfish rebulk guessit
+ pip install --no-cache-dir -U babelfish rebulk guessit && \
  git clone -b german --depth=1 --single-branch https://github.com/Cliffield/Watcher3.git /app/watcher3
 
 # copy local files
